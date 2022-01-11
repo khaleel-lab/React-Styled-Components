@@ -1,5 +1,9 @@
 import './App.css';
-import { FancyButton, StyledButton } from './components/Button/Button.styles';
+import {
+	FancyButton,
+	StyledButton,
+	SubmitButton,
+} from './components/Button/Button.styles';
 
 function App() {
 	return (
@@ -12,6 +16,8 @@ function App() {
 			<br />
 			{/* Extending Styles  */}
 			<FancyButton as='a'>Fancy Button</FancyButton>
+			<br />
+			<SubmitButton>Submit Button</SubmitButton>
 		</div>
 	);
 }

@@ -23,8 +23,22 @@ export const StyledButton = styled.button`
 	}
 `;
 
+// Extending Styles
 export const FancyButton = styled(StyledButton)`
 	background-image: linear-gradient(to right, #f6d365 20%, #fda085 80%);
 	border: none;
 	max-width: 20%;
+`;
+
+// Passed Props & Adding Attributes
+export const SubmitButton = styled(StyledButton).attrs((props) => ({
+	type: 'submit',
+}))`
+	box-shadow: 0 9px #999;
+	&:active {
+		background-color: ${({ variant }) =>
+			variant !== 'outline' ? '#fff' : '#4caf50'};
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+	}
 `;
