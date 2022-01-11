@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledButton = styled.button`
 	border: 2px solid #4caf50;
 	border-radius: 20px;
+	/* Using Props */
 	background-color: ${({ variant }) =>
 		variant === 'outline' ? '#fff' : '#4caf50'};
 	color: ${({ variant }) => (variant === 'outline' ? '#4caf50' : '#fff')};
@@ -14,6 +15,12 @@ export const StyledButton = styled.button`
 	font-size: 16px;
 	cursor: pointer;
 	transition: 0.5s all ease-in-out;
+	/* Pseudo Classes */
+	&:hover {
+		background-color: ${({ variant }) =>
+			variant !== 'outline' ? '#fff' : '#4caf50'};
+		color: ${({ variant }) => (variant !== 'outline' ? '#4caf50' : '#fff')};
+	}
 `;
 
 export const FancyButton = styled(StyledButton)`
