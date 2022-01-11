@@ -53,7 +53,15 @@ const rotate = keyframes`
   }`;
 
 export const AnmiatedLogo = styled.img`
+	margin: 0 auto;
+	display: block;
 	height: 40vmin;
 	pointer-events: none;
 	animation: ${rotate} infinite 20s linear;
+`;
+
+export const DarkButton = styled(StyledButton)`
+	border: 2px solid ${({ theme }) => theme.dark.primary};
+	background-color: ${({ theme }) => theme.dark.primary};
+	color: ${({ theme }) => theme.dark.text};
 `;
