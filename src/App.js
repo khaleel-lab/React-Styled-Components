@@ -1,5 +1,5 @@
 import './App.css';
-import { StyledButton } from './components/Button/Button.styles';
+import { FancyButton, StyledButton } from './components/Button/Button.styles';
 
 function App() {
 	return (
@@ -8,7 +8,10 @@ function App() {
 			<StyledButton>Styled Button</StyledButton>
 			<br />
 			{/* Passing props  */}
-			<StyledButton variant='outline'>Styled Button</StyledButton>
+			<StyledButton variant='outline'>Styled Props Button</StyledButton>
+			<br />
+			{/* Extending Styles  */}
+			<FancyButton as='a'>Fancy Button</FancyButton>
 		</div>
 	);
 }

@@ -15,3 +15,9 @@ export const StyledButton = styled.button`
 	cursor: pointer;
 	transition: 0.5s all ease-in-out;
 `;
+
+export const FancyButton = styled(StyledButton)`
+	background-image: linear-gradient(to right, #f6d365 20%, #fda085 80%);
+	border: none;
+	max-width: 20%;
+`;
