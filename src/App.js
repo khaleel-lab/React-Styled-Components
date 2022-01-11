@@ -1,5 +1,5 @@
-import './App.css';
 import {
+	AnmiatedLogo,
 	FancyButton,
 	StyledButton,
 	SubmitButton,
@@ -8,7 +8,9 @@ import {
 function App() {
 	return (
 		<div className='App'>
-			{/*Basic Styled Component  */}
+			{/* Animations  */}
+			<AnmiatedLogo src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png' />
+			{/* Basic Styled Component  */}
 			<StyledButton>Styled Button</StyledButton>
 			<br />
 			{/* Passing props  */}
